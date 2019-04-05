@@ -1,0 +1,40 @@
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+    <div class='center'>
+        <div class='title'>Birds!</div>
+        <p>
+            Use images of <strong>American_Crow</strong>, <strong>Anna_Hummingbird</strong>, <strong>Belted_Kingfisher</strong>, <strong>Blue_Jay</strong>, <strong>Bohemian_Waxwing</strong>, <strong>Brandt_Cormorant</strong>, <strong>cedar_waxwing</strong>, <strong>common_raven</strong>, <strong>hooded_merganser</strong>, <strong>mallard</strong>, <strong>northern_flicker</strong>, <strong>pacific_loon</strong>, <strong>pelagic_cormorant</strong>, <strong>pied_billed_grebe</strong>, <strong>pileated_woodpecker</strong>, <strong>ruby_throated_hummingbird</strong>, <strong>rufous_hummingbird</strong>, <strong>tree_swallow</strong>, <strong>western_grebe</strong>, or <strong>winter_wren</strong>.
+        </p>
+        <div class='content'>
+            <div class='no-display'>
+                <input id='file-input'
+                       class='no-display'
+                       type='file'
+                       name='file'
+                       accept='image/*'
+                       onchange='showPicked(this)'>
+            </div>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <div class='upload-label'>
+                <label id='upload-label'>No file chosen</label>
+            </div>
+            <div>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+            </div>
+            <div class='analyze'>
+                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+            </div>
+            <div class='result-label'>
+                <label id='result-label'></label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
